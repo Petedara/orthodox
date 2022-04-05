@@ -1,0 +1,165 @@
+body {
+    margin: 0px;
+    display: relative;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.head {
+    padding-top: 7vh; 
+    background-image: url("./newflower.jpg");
+    background-size:cover;
+    margin: 0px;
+    height: 30vh;
+}
+
+.sub-main{
+    display: inline-block;
+    padding-top: 0px;
+    justify-content: space-between;
+    width: 100%;
+    height: 30vh;
+    position: inherit;
+}
+
+.search-container i{
+    position: relative;
+    left: -60px;
+    cursor: pointer;
+}
+
+.sub-main img{
+    float: left;
+    position: relative;
+    padding-left: 0px;
+    top: -250px;
+}
+
+.sub-main li{
+    position: relative;
+    top: -200px;
+    padding-right: 70px;
+    display: inline;
+    justify-content: space-between;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+}
+
+.sub-main li:hover{
+    font-size: 25px;
+    transition: all 1s;
+    font-family: sans-serif;
+}
+
+li a{
+    text-decoration: none;
+    color: white;
+}
+
+.search-container{
+    top: 145px;
+    position: relative;
+}
+
+}
+
+.search-container i {
+    position:relative;
+    padding-right: 400px;
+
+}
+
+.about {
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.about div img{
+    float: left;
+}
+.text{
+    padding-left: 700px;
+}
+input {
+    width: 800px;
+    height: 80px; 
+    border: none;
+    box-shadow: 0px 0px 5px #454545;
+    border-radius: 40px;
+    margin-left: 200px;
+    font-size: 20px;
+}  
+
+@media (max-width: 375px){
+    body{
+        background-color: violet;
+    }
+    input{
+        width: 300px;
+    }
+
+    .head{
+        width: 100%;
+    }
+}
+
+input::placeholder{
+    margin-left: 20px;
+}
+
+.social-icon {
+    padding-left: 10%;
+    top: -300px;
+}
+
+.twitter {
+    color: white;
+    background-color: rgb(0, 110, 255);
+    padding: 8px;
+}
+.twitter:hover{
+    font-size: 15px;
+}
+
+.facebook {
+    color: rgb(25, 0, 255);
+    background-color: white;
+}
+.facebook:hover{
+    font-size: 15px;
+}
+
+.mail{
+    color: white;
+    background-color: rgb(126, 119, 120);
+    padding: 8px;
+}
+.mail:hover{
+    font-size:15px;
+}
+
+.whatsapp{
+    color: white;
+    background-color: rgb(56, 247, 9);
+    padding: 8px;
+}
+.whatsapp:hover{
+    font-size: 15px;
+}
+.telegram{
+    color: white;
+    background-color: rgb(0, 110, 255);
+    padding: 8px;
+}
+.telegram:hover{
+    font-size: 15px;
+}
+
+.doings li{
+    font-size: 20px;
+    font-weight: bold;
+}
+.nav1{
+    height: 50vh;
+}

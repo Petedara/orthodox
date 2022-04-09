@@ -1,165 +1,276 @@
-body {
+body{
     margin: 0px;
-    display: relative;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    background-color: aqua;
 }
-.head {
-    padding-top: 7vh; 
-    background-image: url("./newflower.jpg");
-    background-size:cover;
-    margin: 0px;
-    height: 30vh;
-}
-
-.sub-main{
-    display: inline-block;
-    padding-top: 0px;
+.nav{
+    display: flex;
+    background-image: url("../images/newflower.jpg");
+    background-size: cover;
+    height: 35vh;
     justify-content: space-between;
-    width: 100%;
-    height: 30vh;
-    position: inherit;
+}
+.search-box{
+    bottom: 8.5rem;
+    position: relative;
+    margin: auto;
+    text-align: center;
+    width: 70%;
 }
 
-.search-container i{
+.search-icon{
     position: relative;
-    left: -60px;
-    cursor: pointer;
+    color: blue; 
+    right: 52rem; 
 }
 
-.sub-main img{
-    float: left;
-    position: relative;
-    padding-left: 0px;
-    top: -250px;
+.search-box input{
+    width: 50rem;
+    height: 4rem;
+    border-radius: 2rem;
+    /* background: transparent; */
+    padding-left: 3rem;
+    font-size: 1.5rem;
+    border: 1px solid blue;
+}
+.search-box h3{
+    font-size: 2rem;
+    color: wheat;
 }
 
-.sub-main li{
+/* .search-icon{
     position: relative;
-    top: -200px;
-    padding-right: 70px;
-    display: inline;
-    justify-content: space-between;
-    font-size: 20px;
-    font-weight: bold;
+    color: blue;
+    right: 52rem;
+}
+
+.search-box input{
+    width: 50rem;
+    height: 4rem;
+    border-radius: 2rem;
+    padding-left: 3rem;
+    font-size: 1.5rem;
+    border: 1px solid blue;
+}
+.search-box h3{
+    font-size: 2rem;
+    color: wheat;
+}
+.social-icon{
+    text-align: center;
+    margin: auto; 
+}
+.social-icon a span{
+    color: white;
+    font-size: 1rem;
+    margin-left: .2rem;
+}
+
+.social-icon a{
+    margin: .3em;
+}
+.social-icon{
+    margin-top: -7rem;
+}
+a{
     text-decoration: none;
+    padding: .145rem .3rem;
     color: white;
 }
-
-.sub-main li:hover{
-    font-size: 25px;
-    transition: all 1s;
-    font-family: sans-serif;
+.a-facebook{
+    background-color: #3b5998;
 }
-
-li a{
-    text-decoration: none;
+.a-twitter{
+    background-color: #00ACEE;
+}
+.a-whatsapp{
+    background-color: #25D366;
+}
+.a-pinterest{
+    background-color: #E60023;
+}
+.a-telegram{
+    background-color: #229ED9;
+}
+.a-mail{
+    background-color: #6A6C6D;
+}
+.facebook{
     color: white;
-}
+} */
 
-.search-container{
-    top: 145px;
+
+.nav-logo img{
+    /* display: flex; */
+    /* margin-bottom: 6rem; */
     position: relative;
+    bottom: 4rem;
+    right: 3rem;
+    /* background-color: red; */
+    width: 25rem;
 }
-
+.login{
+    padding-top: 1rem;
+    padding-right: 1rem;
 }
-
-.search-container i {
-    position:relative;
-    padding-right: 400px;
-
+.nav-list{
+    display: flex;
+    /* flex-wrap: wrap; */
+    gap: 1rem;
+    margin: 0;
+    padding-top:1rem ;
+    list-style: none;
 }
-
-.about {
-    display: inline-flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-.about div img{
-    float: left;
-}
-.text{
-    padding-left: 700px;
-}
-input {
-    width: 800px;
-    height: 80px; 
-    border: none;
-    box-shadow: 0px 0px 5px #454545;
-    border-radius: 40px;
-    margin-left: 200px;
-    font-size: 20px;
-}  
-
-@media (max-width: 375px){
-    body{
-        background-color: violet;
-    }
-    input{
-        width: 300px;
-    }
-
-    .head{
-        width: 100%;
-    }
-}
-
-input::placeholder{
-    margin-left: 20px;
-}
-
-.social-icon {
-    padding-left: 10%;
-    top: -300px;
-}
-
-.twitter {
-    color: white;
-    background-color: rgb(0, 110, 255);
-    padding: 8px;
-}
-.twitter:hover{
-    font-size: 15px;
-}
-
-.facebook {
-    color: rgb(25, 0, 255);
-    background-color: white;
-}
-.facebook:hover{
-    font-size: 15px;
-}
-
-.mail{
-    color: white;
-    background-color: rgb(126, 119, 120);
-    padding: 8px;
-}
-.mail:hover{
-    font-size:15px;
-}
-
-.whatsapp{
-    color: white;
-    background-color: rgb(56, 247, 9);
-    padding: 8px;
-}
-.whatsapp:hover{
-    font-size: 15px;
-}
-.telegram{
-    color: white;
-    background-color: rgb(0, 110, 255);
-    padding: 8px;
-}
-.telegram:hover{
-    font-size: 15px;
-}
-
-.doings li{
-    font-size: 20px;
+.nav-list li a{
+    text-decoration: none;
+    font-size: 1.2rem;
     font-weight: bold;
+    color: wheat;
+    flex-grow: 0;
+    flex-shrink: 1;
 }
-.nav1{
-    height: 50vh;
+.mid-nav{
+    display: flex;
+    gap: 5rem;
+    padding-top: 10rem;
+}
+
+@media only screen and (max-width: 320px){
+    .search-box{
+        display: flex;
+    }
+    .search-icon{
+        position: static;
+        bottom: 29.8rem;
+        right: -95rem;
+    }
+}
+
+@media only screen and (max-width: 468px){
+    .nav{
+        height: 9rem;
+    }
+    .mid-nav{
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .mid-nav img{
+        width: 100%;     
+    }
+
+    .nav-list{
+        display: none;
+    }
+    .nav-logo img{
+        position: relative;
+        width: 10rem;
+        bottom: 1rem;
+        left: 0.1rem;
+    }
+
+    .search-box input{
+        width: 25rem;
+        border-radius: .5rem;
+
+    }
+
+    .search-icon{
+        /* position: absolute;
+        top: 0;
+        bottom: 0;
+        /* right: 25rem; */
+         left: 0;
+        float: left;
+        bottom: 1.75rem; 
+    }
+
+    .search-box{
+        bottom: 3rem;
+        right: 3rem;
+    }
+    .nav-list li a{
+        font-size: .5rem;
+    }
+    .search-box-text h3 {
+        display: none;
+    }
+
+    .nav-logo img{
+        width: 15rem;
+        bottom: 1.5rem;
+        height: 7rem;
+        left: -2rem;
+    }
+    .search-box-input input{
+        width: 15rem;
+        height: 2rem;
+        margin-left: 1rem;
+        font-size: 1rem;
+    }
+    .search-box-input i{
+        right: 7rem;
+        /* top: .1rem; */
+    }
+}
+@media screen and (max-width: 768px){
+    .nav{
+        height: 9rem;
+    }
+    .mid-nav{
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .mid-nav img{
+        width: 100%;     
+    }
+
+    .nav-list{
+        display: none;
+    }
+    .nav-logo img{
+        position: relative;
+        width: 10rem;
+        bottom: 1rem;
+        left: 0.1rem;
+    }
+
+    .search-box input{
+        width: 25rem;
+        border-radius: .5rem;
+
+    }
+
+    .search-icon{
+        right: 12.5rem;
+        bottom: 1.75rem;
+    }
+
+    .search-box{
+        bottom: 3rem;
+        right: 3rem;
+    }
+    .nav-list li a{
+        font-size: .5rem;
+    }
+    .search-box-text h3 {
+        display: none;
+    }
+
+    .nav-logo img{
+        width: 15rem;
+        bottom: 1.5rem;
+        height: 7rem;
+        left: -2rem;
+    }
+    .search-box-input input{
+        width: 15rem;
+        height: 2rem;
+        margin-left: 1rem;
+        font-size: 1rem;
+    }
+    .search-box-input i{
+        left: -18rem;
+        top: .07rem;
+    }
 }
